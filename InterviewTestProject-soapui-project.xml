@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="19029288-c584-408d-b0fd-13f7c50fd225" activeEnvironment="Default" name="InterviewTestProject" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="TestSuite"/>
+  <con:entry key="Endpoint" value="https://sandbox.bullclip.com"/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="true"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="TestCase"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="C:\Users\Ahmed\Desktop"/>
+  <con:entry key="Ignore Errors" value="true"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="true"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="e83a5a43-d24e-4708-a9a1-0e115053e397" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sandbox.bullclip.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://127.0.0.1:8080/</con:endpoint><con:endpoint>http://DESKTOP-3ILHFID:8080/</con:endpoint><con:endpoint>https://sandbox.bullclip.com</con:endpoint></con:endpoints><con:resource name="Create" path="/api/v{apiver}/user/create" id="3c6de680-a791-4fe7-94d2-225b7c15858b"><con:settings/><con:parameters><con:parameter><con:name>apiver</con:name><con:value>apiver</con:value><con:style>TEMPLATE</con:style><con:default>apiver</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>Ocp-Apim-Subscription-Key</con:name><con:style>HEADER</con:style></con:parameter></con:parameters><con:method name="Create 1" id="e56feb07-eb8a-469f-8088-ed0d9c1c7788" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:cre="https://sandbox.bullclip.com/api/v1/user/create">cre:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:cre="https://sandbox.bullclip.com/api/v1/user/create">cre:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=iso-8859-1</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml; iso-8859-1</con:mediaType><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="ad1f8863-9780-43ba-8ce8-bf4586b75e69" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "firstName": "t${=(int)(Math.random()*1000)}first",
+  "lastName": "t${=(int)(Math.random()*1000)}last",
+  "email": "t${=(int)(Math.random()*1000)}@emzdr.com",
+  "password": "68060900",
+  "confirmPassword": "68060900",
+  "isOptInForEmail": true
+}</con:request><con:originalUri>http://DESKTOP-3ILHFID/api/v1/user/create</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry><con:entry/></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="218b7ce8-894a-4725-98d2-6463d67e1fee" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sandbox.bullclip.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://127.0.0.1:8080/</con:endpoint><con:endpoint>https://sandbox.bullclip.com</con:endpoint></con:endpoints><con:resource name="Profile" path="/api/v{apiver}/user/profile" id="d2455597-414d-4900-ba14-d155fe29698c"><con:settings/><con:parameters><con:parameter><con:name>apiver</con:name><con:value>apiver</con:value><con:style>TEMPLATE</con:style><con:default>apiver</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>Ocp-Apim-Subscription-Key</con:name><con:value/><con:style>HEADER</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter required="false"><con:name>Authorization</con:name><con:style>HEADER</con:style></con:parameter></con:parameters><con:method name="Profile 1" id="1e43e57c-8a73-49e9-8167-69941a3cab12" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>401 400</con:status><con:params/><con:element xmlns:prof="https://sandbox.bullclip.com/api/v1/user/profile">prof:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=us-ascii</con:mediaType><con:status>400</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=iso-8859-1</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="d8fed5c1-64ba-41fc-aa0a-726db4e3281a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "id": "880aeabb4ca7dddaabd363c0a88a0ad4bc495257a8685513ff5cafc7f935a70a",
+  "firstName": "./dsd",
+  "lastName": "?/@#$%",
+  "companyName": "company10_16_31_38",
+  "department": "department10_16_31_38",
+  "dateJoined": "2018-02-20T23:40:37.4712724Z",
+  "title": "title10_16_31_38",
+  "phone": "08080808",
+  "email": "interview-test@drawboard.com",
+  "isOptInForCommunication": true,
+  "accountActivated": true,
+  "subscriptionExpired": false
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/profile</con:originalUri><con:credentials><con:username>interview-test@drawboard.com</con:username><con:password>drawboard-test</con:password><con:domain>https://preprod-api.bullclip.com/api/v1/auth/login</con:domain><con:selectedAuthProfile>Profile 1</con:selectedAuthProfile><con:authType>OAuth 2.0</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry><con:entry>Ocp-Apim-Subscription-Key</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="30f56c70-611f-4957-96a1-a76e3fdb7f20" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://preprod-api.bullclip.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://127.0.0.1:8080/</con:endpoint><con:endpoint>https://preprod-api.bullclip.com</con:endpoint></con:endpoints><con:resource name="Login" path="/api/v1/auth/login" id="41d663fa-339e-47b4-aa15-b8c6489a99dd"><con:settings/><con:parameters/><con:method name="Login 1" id="35e30ca7-f118-49d5-9ce6-2bbe769bfed0" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:log="https://preprod-api.bullclip.com/api/v1/auth/login">log:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=iso-8859-1</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="a4bca24e-ee18-48ae-bcb6-8a19417f491c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://preprod-api.bullclip.com</con:endpoint><con:request>{
+  "username": "interview-test@drawboard.com",
+  "password": "drawboard-test"
+}</con:request><con:originalUri>https://preprod-api.bullclip.com/api/v1/auth/login</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry/></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="600917f3-9edd-4d28-840f-de90fccb5b57" name="TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="44f1c991-e0f3-4a5a-a8b3-52c26093e612" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="restrequest" name="CreateHappy - SpecialAlphaNumericChars" id="bf5d9672-a3e7-48ed-85f5-8244d1beddd8"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/create" methodName="Create 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateHappy - Request 1" id="ad1f8863-9780-43ba-8ce8-bf4586b75e69" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "firstName": "t${=(int)(Math.random()*1000)}first",
+  "lastName": "t${=(int)(Math.random()*1000)}last",
+  "email": "t${=(int)(Math.random()*1000)}@emzdr.com",
+  "password": ".?19=asd",
+  "confirmPassword": ".?19=asd",
+  "isOptInForEmail": true
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/create</con:originalUri><con:assertion type="Simple Contains" id="e54cbb7a-5afa-40e0-970c-806d736c324e" name="special-char-number"><con:configuration><token>{}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="CreateHappy - SpecialChars" id="5bd20ba1-981c-4964-82a9-7c924d7967fe"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/create" methodName="Create 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateHappy - SpecialChars" id="ad1f8863-9780-43ba-8ce8-bf4586b75e69" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "firstName": "t${=(int)(Math.random()*1000)}first",
+  "lastName": "t${=(int)(Math.random()*1000)}last",
+  "email": "t${=(int)(Math.random()*1000)}@emzdr.com",
+  "password": ".?$%^&amp;*(",
+  "confirmPassword": ".?$%^&amp;*(",
+  "isOptInForEmail": true
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/create</con:originalUri><con:assertion type="Simple Contains" id="e54cbb7a-5afa-40e0-970c-806d736c324e" name="special-char"><con:configuration><token>{}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="CreateHappy2 - Numbers" id="88027965-9b0c-4107-b5f5-ce770ed8eb50"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/create" methodName="Create 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateHappy2 - Request 1" id="ad1f8863-9780-43ba-8ce8-bf4586b75e69" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "firstName": "t${=(int)(Math.random()*1000)}first",
+  "lastName": "t${=(int)(Math.random()*1000)}last",
+  "email": "t${=(int)(Math.random()*1000)}@emzdr.com",
+  "password": "68060900",
+  "confirmPassword": "68060900",
+  "isOptInForEmail": true
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/create</con:originalUri><con:assertion type="Simple Contains" id="e54cbb7a-5afa-40e0-970c-806d736c324e" name="special-char-number"><con:configuration><token>{}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="CreateHappy3 - AlphaNumeric" id="e7d24b47-6eb6-461b-9202-4e4b2f9bc90a"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/create" methodName="Create 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateHappy3 - Request 1" id="ad1f8863-9780-43ba-8ce8-bf4586b75e69" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "firstName": "t${=(int)(Math.random()*1000)}first",
+  "lastName": "t${=(int)(Math.random()*1000)}last",
+  "email": "t${=(int)(Math.random()*1000)}@emzdr.com",
+  "password": "zaq12wsx",
+  "confirmPassword": "zaq12wsx",
+  "isOptInForEmail": true
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/create</con:originalUri><con:assertion type="Simple Contains" id="e54cbb7a-5afa-40e0-970c-806d736c324e" name="special-char-number"><con:configuration><token>{}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="CreateSad - LessChars" id="4df2f8ba-81b8-4c48-ad2d-f5cb384ea9c0"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/create" methodName="Create 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateSad - Request 1" id="ad1f8863-9780-43ba-8ce8-bf4586b75e69" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "firstName": "t${#TestCase#randomValue}first",
+  "lastName": "t${#TestCase#randomValue}last",
+  "email": "t${#TestCase#randomValue}@emzdr.com",
+  "password": "zaq1",
+  "confirmPassword": "zaq1",
+  "isOptInForEmail": true
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/create</con:originalUri><con:assertion type="Simple Contains" id="a5a78dd8-8afb-439e-bcdb-41f15b32c487" name="Contains"><con:configuration><token>error</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="CreateSad2 - Blank" id="18d836e5-ff35-4cd8-9a28-57a3061a6e3f"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/create" methodName="Create 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateHappy4 - Blank" id="ad1f8863-9780-43ba-8ce8-bf4586b75e69" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "firstName": "t${=(int)(Math.random()*1000)}first",
+  "lastName": "t${=(int)(Math.random()*1000)}last",
+  "email": "t${=(int)(Math.random()*1000)}@emzdr.com",
+  "password": "",
+  "confirmPassword": "",
+  "isOptInForEmail": true
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/create</con:originalUri><con:assertion type="Simple Contains" id="e54cbb7a-5afa-40e0-970c-806d736c324e" name="blanks"><con:configuration><token>error</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="CreateSad3 - ConfirmPasswordOnly" id="72888571-c489-45f2-b89d-bcb603153bac"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/create" methodName="Create 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateSad3 - ConfirmPasswordOnly" id="ad1f8863-9780-43ba-8ce8-bf4586b75e69" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "firstName": "t${=(int)(Math.random()*1000)}first",
+  "lastName": "t${=(int)(Math.random()*1000)}last",
+  "email": "t${=(int)(Math.random()*1000)}@emzdr.com",
+  "password": "",
+  "confirmPassword": "asd2345",
+  "isOptInForEmail": true
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/create</con:originalUri><con:assertion type="Simple Contains" id="e54cbb7a-5afa-40e0-970c-806d736c324e" name="blanks"><con:configuration><token>error</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="CreateSad4 - PasswordOnly" id="eadb860f-3af9-453d-8691-794c93f87abf"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/create" methodName="Create 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Copy of CreateSad3 - PasswordOnly" id="ad1f8863-9780-43ba-8ce8-bf4586b75e69" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "firstName": "t${=(int)(Math.random()*1000)}first",
+  "lastName": "t${=(int)(Math.random()*1000)}last",
+  "email": "t${=(int)(Math.random()*1000)}@emzdr.com",
+  "password": "asd2345",
+  "confirmPassword": "5432dsa",
+  "isOptInForEmail": true
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/create</con:originalUri><con:assertion type="Simple Contains" id="e54cbb7a-5afa-40e0-970c-806d736c324e" name="blanks"><con:configuration><token>error</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="CreateSad5 - DifferentPasswordAndConfirmPassword" id="17ab06f3-38c1-4364-a58b-ca2736284ce3"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/create" methodName="Create 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateSad5 - DifferentPasswordAndConfirmPassword" id="ad1f8863-9780-43ba-8ce8-bf4586b75e69" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "firstName": "t${=(int)(Math.random()*1000)}first",
+  "lastName": "t${=(int)(Math.random()*1000)}last",
+  "email": "t${=(int)(Math.random()*1000)}@emzdr.com",
+  "password": "asd2345",
+  "confirmPassword": "",
+  "isOptInForEmail": true
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/create</con:originalUri><con:assertion type="Simple Contains" id="e54cbb7a-5afa-40e0-970c-806d736c324e" name="blanks"><con:configuration><token>error</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Login" id="ceed0b4b-398f-4649-ac99-1fc75944ed68"><con:settings/><con:config service="https://preprod-api.bullclip.com" resourcePath="/api/v1/auth/login" methodName="Login 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Login 1 - Request 1" id="a4bca24e-ee18-48ae-bcb6-8a19417f491c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@dump-file">C:/Users/Ahmed/Desktop</con:setting><con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@max-size">0</con:setting></con:settings><con:endpoint>https://preprod-api.bullclip.com</con:endpoint><con:request>{
+  "username": "interview-test@drawboard.com",
+  "password": "drawboard-test"
+}</con:request><con:originalUri>https://preprod-api.bullclip.com/api/v1/auth/login</con:originalUri><con:assertion type="Simple Contains" id="47f71c42-dbab-416f-8af6-34ba86c10eb2" name="Contains"><con:configuration><token>accesstoken</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ProfileSad - SpecialFirstLast" id="813de622-efb3-4a59-8a45-6ab14b60a855"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/profile" methodName="Profile 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Profile 1 - Request 1" id="d8fed5c1-64ba-41fc-aa0a-726db4e3281a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "id": "880aeabb4ca7dddaabd363c0a88a0ad4bc495257a8685513ff5cafc7f935a70a",
+  "firstName": "./dsd",
+  "lastName": "?/@#$%",
+  "companyName": "company10_16_31_38",
+  "department": "department10_16_31_38",
+  "dateJoined": "2018-02-20T23:40:37.4712724Z",
+  "title": "title10_16_31_38",
+  "phone": "08080808",
+  "email": "interview-test@drawboard.com",
+  "isOptInForCommunication": true,
+  "accountActivated": true,
+  "subscriptionExpired": false
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/profile</con:originalUri><con:assertion type="Simple Contains" id="16cf31bb-eb05-42ce-823f-8db382a17413" name="Contains"><con:configuration><token>fieldError</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>interview-test@drawboard.com</con:username><con:password>drawboard-test</con:password><con:domain>https://preprod-api.bullclip.com/api/v1/auth/login</con:domain><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${Login#ResponseAsXml#//*:authorizationHeader}"/>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry><con:entry>Ocp-Apim-Subscription-Key</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ProfileSad2 - SpecialFirst" id="5118feb7-4b06-46da-ae8b-4fadbd672a11"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/profile" methodName="Profile 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ProfileSad2 - Request 1" id="d8fed5c1-64ba-41fc-aa0a-726db4e3281a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "id": "880aeabb4ca7dddaabd363c0a88a0ad4bc495257a8685513ff5cafc7f935a70a",
+  "firstName": "./dsd",
+  "lastName": "test",
+  "companyName": "company10_16_31_38",
+  "department": "department10_16_31_38",
+  "dateJoined": "2018-02-20T23:40:37.4712724Z",
+  "title": "title10_16_31_38",
+  "phone": "08080808",
+  "email": "interview-test@drawboard.com",
+  "isOptInForCommunication": true,
+  "accountActivated": true,
+  "subscriptionExpired": false
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/profile</con:originalUri><con:assertion type="Simple Contains" id="16cf31bb-eb05-42ce-823f-8db382a17413" name="Contains"><con:configuration><token>fieldError</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>interview-test@drawboard.com</con:username><con:password>drawboard-test</con:password><con:domain>https://preprod-api.bullclip.com/api/v1/auth/login</con:domain><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${Login#ResponseAsXml#//*:authorizationHeader}"/>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry><con:entry>Ocp-Apim-Subscription-Key</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ProfileSad3 - BlankFirstLast" id="d3a0af2e-9a1b-4af6-b1ab-f2bd4f1220f1"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/profile" methodName="Profile 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ProfileSad3 - Request 1" id="d8fed5c1-64ba-41fc-aa0a-726db4e3281a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "id": "880aeabb4ca7dddaabd363c0a88a0ad4bc495257a8685513ff5cafc7f935a70a",
+  "firstName": "",
+  "lastName": "",
+  "companyName": "company10_16_31_38",
+  "department": "department10_16_31_38",
+  "dateJoined": "2018-02-20T23:40:37.4712724Z",
+  "title": "title10_16_31_38",
+  "phone": "08080808",
+  "email": "interview-test@drawboard.com",
+  "isOptInForCommunication": true,
+  "accountActivated": true,
+  "subscriptionExpired": false
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/profile</con:originalUri><con:assertion type="Simple Contains" id="16cf31bb-eb05-42ce-823f-8db382a17413" name="Contains"><con:configuration><token>{}</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>interview-test@drawboard.com</con:username><con:password>drawboard-test</con:password><con:domain>https://preprod-api.bullclip.com/api/v1/auth/login</con:domain><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${Login#ResponseAsXml#//*:authorizationHeader}"/>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry><con:entry>Ocp-Apim-Subscription-Key</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ProfileSad4 - BlankFirst" id="2cdeb5b7-94e7-4914-bd23-febd46b527e2"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/profile" methodName="Profile 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ProfileSad3 - BlankFirst" id="d8fed5c1-64ba-41fc-aa0a-726db4e3281a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "id": "880aeabb4ca7dddaabd363c0a88a0ad4bc495257a8685513ff5cafc7f935a70a",
+  "firstName": "",
+  "lastName": "test",
+  "companyName": "company10_16_31_38",
+  "department": "department10_16_31_38",
+  "dateJoined": "2018-02-20T23:40:37.4712724Z",
+  "title": "title10_16_31_38",
+  "phone": "08080808",
+  "email": "interview-test@drawboard.com",
+  "isOptInForCommunication": true,
+  "accountActivated": true,
+  "subscriptionExpired": false
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/profile</con:originalUri><con:assertion type="Simple Contains" id="16cf31bb-eb05-42ce-823f-8db382a17413" name="Contains"><con:configuration><token>{}</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>interview-test@drawboard.com</con:username><con:password>drawboard-test</con:password><con:domain>https://preprod-api.bullclip.com/api/v1/auth/login</con:domain><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${Login#ResponseAsXml#//*:authorizationHeader}"/>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry><con:entry>Ocp-Apim-Subscription-Key</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ProfileSad5 - BlankLast" id="650a2283-8946-4d91-a3e2-21cf1b1864ca"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/profile" methodName="Profile 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ProfileSad5 - BlankLast" id="d8fed5c1-64ba-41fc-aa0a-726db4e3281a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "id": "880aeabb4ca7dddaabd363c0a88a0ad4bc495257a8685513ff5cafc7f935a70a",
+  "firstName": "",
+  "lastName": "test",
+  "companyName": "company10_16_31_38",
+  "department": "department10_16_31_38",
+  "dateJoined": "2018-02-20T23:40:37.4712724Z",
+  "title": "title10_16_31_38",
+  "phone": "08080808",
+  "email": "interview-test@drawboard.com",
+  "isOptInForCommunication": true,
+  "accountActivated": true,
+  "subscriptionExpired": false
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/profile</con:originalUri><con:assertion type="Simple Contains" id="16cf31bb-eb05-42ce-823f-8db382a17413" name="Contains"><con:configuration><token>{}</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>interview-test@drawboard.com</con:username><con:password>drawboard-test</con:password><con:domain>https://preprod-api.bullclip.com/api/v1/auth/login</con:domain><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${Login#ResponseAsXml#//*:authorizationHeader}"/>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry><con:entry>Ocp-Apim-Subscription-Key</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ProfileSad6 - 100LNSPLast" id="d67f673d-5eea-4b37-a706-cfd13f35564d"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/profile" methodName="Profile 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Copy of ProfileSad5 - 100LNSPLast" id="d8fed5c1-64ba-41fc-aa0a-726db4e3281a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "id": "880aeabb4ca7dddaabd363c0a88a0ad4bc495257a8685513ff5cafc7f935a70a",
+  "firstName": "test",
+  "lastName": "OvsJq9JPKoydnO—nZ'blnf3R70zG9aMm,.g7!eixYYN.Dozukhj6XEoTlMP7a8m ahkFyP7pG2DP52eweulOaaNZbOA..HqCX(:u",
+  "companyName": "company10_16_31_38",
+  "department": "department10_16_31_38",
+  "dateJoined": "2018-02-20T23:40:37.4712724Z",
+  "title": "title10_16_31_38",
+  "phone": "08080808",
+  "email": "interview-test@drawboard.com",
+  "isOptInForCommunication": true,
+  "accountActivated": true,
+  "subscriptionExpired": false
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/profile</con:originalUri><con:assertion type="Simple Contains" id="16cf31bb-eb05-42ce-823f-8db382a17413" name="Contains"><con:configuration><token>{}</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>interview-test@drawboard.com</con:username><con:password>drawboard-test</con:password><con:domain>https://preprod-api.bullclip.com/api/v1/auth/login</con:domain><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${Login#ResponseAsXml#//*:authorizationHeader}"/>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry><con:entry>Ocp-Apim-Subscription-Key</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ProfileSad7 - 100LNSPFirst" id="dc70e63d-65f2-4a17-a2c9-1f8c48a8ba0d"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/profile" methodName="Profile 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ProfileSad5 - 100LNSPFirst" id="d8fed5c1-64ba-41fc-aa0a-726db4e3281a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "id": "880aeabb4ca7dddaabd363c0a88a0ad4bc495257a8685513ff5cafc7f935a70a",
+  "firstName": "k;nzW,gC,—qgta'oc7)'sHuKjWb?Gg6 .96bS4xGEGDk63Xo—.(-BeH.zhMSK:6A.2W)iV..PQ98Yj0KxQdA;pLO-'ABlR09yf8—",
+  "lastName": "testlast",
+  "companyName": "company10_16_31_38",
+  "department": "department10_16_31_38",
+  "dateJoined": "2018-02-20T23:40:37.4712724Z",
+  "title": "title10_16_31_38",
+  "phone": "08080808",
+  "email": "interview-test@drawboard.com",
+  "isOptInForCommunication": true,
+  "accountActivated": true,
+  "subscriptionExpired": false
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/profile</con:originalUri><con:assertion type="Simple Contains" id="16cf31bb-eb05-42ce-823f-8db382a17413" name="Contains"><con:configuration><token>{}</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>interview-test@drawboard.com</con:username><con:password>drawboard-test</con:password><con:domain>https://preprod-api.bullclip.com/api/v1/auth/login</con:domain><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${Login#ResponseAsXml#//*:authorizationHeader}"/>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry><con:entry>Ocp-Apim-Subscription-Key</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ProfileHappy - 100LNSPFirstLast" id="48165456-7b55-486a-b99f-64759c2aa8cc"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/profile" methodName="Profile 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ProfileSad5 - 100LNSP" id="d8fed5c1-64ba-41fc-aa0a-726db4e3281a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "id": "880aeabb4ca7dddaabd363c0a88a0ad4bc495257a8685513ff5cafc7f935a70a",
+  "firstName": "test",
+  "lastName": "VLx—Lr7okVcCMyo4Yc.CH:huG4NP3.0d5b3UD.jUPudjvR—Cp2JpJPd(OJP?EV.vZiBiC7c3sTzY.;XTbDC,(1g.d.!NdcjJpIIv",
+  "companyName": "company10_16_31_38",
+  "department": "department10_16_31_38",
+  "dateJoined": "2018-02-20T23:40:37.4712724Z",
+  "title": "title10_16_31_38",
+  "phone": "08080808",
+  "email": "interview-test@drawboard.com",
+  "isOptInForCommunication": true,
+  "accountActivated": true,
+  "subscriptionExpired": false
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/profile</con:originalUri><con:assertion type="Simple Contains" id="16cf31bb-eb05-42ce-823f-8db382a17413" name="Contains"><con:configuration><token>{}</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>interview-test@drawboard.com</con:username><con:password>drawboard-test</con:password><con:domain>https://preprod-api.bullclip.com/api/v1/auth/login</con:domain><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${Login#ResponseAsXml#//*:authorizationHeader}"/>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry><con:entry>Ocp-Apim-Subscription-Key</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ProfileHappy2 - Standard" id="46395bad-165f-4e6d-a25b-812e7abe2f54"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/profile" methodName="Profile 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ProfileHappy - Standard" id="d8fed5c1-64ba-41fc-aa0a-726db4e3281a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "id": "880aeabb4ca7dddaabd363c0a88a0ad4bc495257a8685513ff5cafc7f935a70a",
+  "firstName": "test",
+  "lastName": "test",
+  "companyName": "company10_16_31_38",
+  "department": "department10_16_31_38",
+  "dateJoined": "2018-02-20T23:40:37.4712724Z",
+  "title": "title10_16_31_38",
+  "phone": "08080808",
+  "email": "interview-test@drawboard.com",
+  "isOptInForCommunication": true,
+  "accountActivated": true,
+  "subscriptionExpired": false
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/profile</con:originalUri><con:assertion type="Simple Contains" id="16cf31bb-eb05-42ce-823f-8db382a17413" name="Contains"><con:configuration><token>{}</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>interview-test@drawboard.com</con:username><con:password>drawboard-test</con:password><con:domain>https://preprod-api.bullclip.com/api/v1/auth/login</con:domain><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${Login#ResponseAsXml#//*:authorizationHeader}"/>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry><con:entry>Ocp-Apim-Subscription-Key</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ProfileHappy3 - AllSpaces" id="f0fd1d90-ef27-4589-81e8-a0cd987fac18"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/profile" methodName="Profile 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ProfileHappy3 - AllSpaces" id="d8fed5c1-64ba-41fc-aa0a-726db4e3281a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "id": "880aeabb4ca7dddaabd363c0a88a0ad4bc495257a8685513ff5cafc7f935a70a",
+  "firstName": "8734942309520438532695444018997859421947486693733972332755524298127737573009696568088583513321303048",
+  "lastName": "3438749986476026872694366610679130699244394312627676878114010173698583914105368790169976365411544761",
+  "companyName": "company10_16_31_38",
+  "department": "department10_16_31_38",
+  "dateJoined": "2018-02-20T23:40:37.4712724Z",
+  "title": "title10_16_31_38",
+  "phone": "08080808",
+  "email": "interview-test@drawboard.com",
+  "isOptInForCommunication": true,
+  "accountActivated": true,
+  "subscriptionExpired": false
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/profile</con:originalUri><con:assertion type="Simple Contains" id="16cf31bb-eb05-42ce-823f-8db382a17413" name="Contains"><con:configuration><token>{}</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>interview-test@drawboard.com</con:username><con:password>drawboard-test</con:password><con:domain>https://preprod-api.bullclip.com/api/v1/auth/login</con:domain><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${Login#ResponseAsXml#//*:authorizationHeader}"/>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry><con:entry>Ocp-Apim-Subscription-Key</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ProfileHappy4 - AllPunctuation" id="89323577-9a77-4999-8a59-edce86e672aa"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/profile" methodName="Profile 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ProfileHappy4 - AllPunctuation" id="d8fed5c1-64ba-41fc-aa0a-726db4e3281a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "id": "880aeabb4ca7dddaabd363c0a88a0ad4bc495257a8685513ff5cafc7f935a70a",
+  "firstName": "?.(-,,.,')-.'-!!..-).,—,('.(''(—.-.,—...,)—,?''''(.—',.?.)'....)——,,..(?',(..(—??,..-,).(..).?—)..)?",
+  "lastName": "...!))—,'—-,.!—..,(.—,-,(.(.'.?!.,)-,-).,(!.!,.,!?(,),—,(.-),.)!.,.'!,-.,.?.--?.)(.,.)'-,'.!,,.-.('.",
+  "companyName": "company10_16_31_38",
+  "department": "department10_16_31_38",
+  "dateJoined": "2018-02-20T23:40:37.4712724Z",
+  "title": "title10_16_31_38",
+  "phone": "08080808",
+  "email": "interview-test@drawboard.com",
+  "isOptInForCommunication": true,
+  "accountActivated": true,
+  "subscriptionExpired": false
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/profile</con:originalUri><con:assertion type="Simple Contains" id="16cf31bb-eb05-42ce-823f-8db382a17413" name="Contains"><con:configuration><token>{}</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>interview-test@drawboard.com</con:username><con:password>drawboard-test</con:password><con:domain>https://preprod-api.bullclip.com/api/v1/auth/login</con:domain><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${Login#ResponseAsXml#//*:authorizationHeader}"/>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry><con:entry>Ocp-Apim-Subscription-Key</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ProfileHappy5 - AllNumber" id="91e3eac1-04c6-4ef0-98cd-60e57a11dae5"><con:settings/><con:config service="https://sandbox.bullclip.com" resourcePath="/api/v{apiver}/user/profile" methodName="Profile 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ProfileHappy5 - AllNumber" id="d8fed5c1-64ba-41fc-aa0a-726db4e3281a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://sandbox.bullclip.com</con:endpoint><con:request>{
+  "id": "880aeabb4ca7dddaabd363c0a88a0ad4bc495257a8685513ff5cafc7f935a70a",
+  "firstName": "2997590931712136525704690751209532575863119730453113889982501782030954704296805455993903178758609372",
+  "lastName": "3438749986476026872694366610679130699244394312627676878114010173698583914105368790169976365411544761",
+  "companyName": "company10_16_31_38",
+  "department": "department10_16_31_38",
+  "dateJoined": "2018-02-20T23:40:37.4712724Z",
+  "title": "title10_16_31_38",
+  "phone": "08080808",
+  "email": "interview-test@drawboard.com",
+  "isOptInForCommunication": true,
+  "accountActivated": true,
+  "subscriptionExpired": false
+}</con:request><con:originalUri>https://sandbox.bullclip.com/api/v1/user/profile</con:originalUri><con:assertion type="Simple Contains" id="16cf31bb-eb05-42ce-823f-8db382a17413" name="Contains"><con:configuration><token>{}</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>interview-test@drawboard.com</con:username><con:password>drawboard-test</con:password><con:domain>https://preprod-api.bullclip.com/api/v1/auth/login</con:domain><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${Login#ResponseAsXml#//*:authorizationHeader}"/>
+  <con:entry key="Ocp-Apim-Subscription-Key" value="1c2ce8bc7b8649b7b5467afcf17898de"/>
+  <con:entry key="apiver" value="1"/>
+</con:parameters><con:parameterOrder><con:entry>apiver</con:entry><con:entry>Ocp-Apim-Subscription-Key</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:restMockService id="caf743b3-8f9e-4863-8060-4aa93c4b9622" port="8080" path="/" host="127.0.0.1" name="REST MockService 1" docroot=""><con:settings/><con:properties/><con:restMockAction name="/api/v1/auth/login" method="POST" resourcePath="/api/v1/auth/login" id="6f5f4eed-ef63-4264-bbbc-cecf67f3424c"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Response 1" id="bb284ab5-5eab-4e78-a376-5cf281b92136" httpResponseStatus="200" mediaType="application/json" encoding="utf-8"><con:settings/><con:responseContent>{"accessToken":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJuYW1laWQiOiI4ODBhZWFiYjRjYTdkZGRhYWJkMzYzYzBhODhhMGFkNGJjNDk1MjU3YTg2ODU1MTNmZjVjYWZjN2Y5MzVhNzBhIiwiZW1haWwiOiJpbnRlcnZpZXctdGVzdEBkcmF3Ym9hcmQuY29tIiwiaXNzIjoiYXV0aC5kcmF3Ym9hcmQuY29tIiwiYXVkIjoiaHR0cHM6Ly9wcmVwcm9kLWFwaS5idWxsY2xpcC5jb20iLCJleHAiOjE1MjA4NzA4MTgsIm5iZiI6MTUyMDg2NzIxOH0.jrjsW4ziZ-OxH2gRr3scQrURHF4jwGevIX17UWTQAAwqSv7UvLGVbzZFQTuVmdLh3rCr_aeZElNhaokOLoIDQatC0_lvgVk-1lJtqcHZucNOu_KZ9WPhTq-YlV_Xts6brE9Lac5mwMLMFEA21X-zli9bJZotECtQOafdBN8JNyZVhUVF3dx0kPU4hKBMAkKwaZMPz5fWuxb7gPtWy0J0ObFS69w6rjPvLTu5kMSd93AmFB013TGtu-VyAg9b8xPMoSBs1A8ea4pqSNkJSwLcEUWFcKOVsiWIhNyN-XV2li0flxoALogDNEPk5pSNfAIh599DqqfG4h6zr_wHPW1_Dg","refreshToken":"ODgwYWVhYmI0Y2E3ZGRkYWFiZDM2M2MwYTg4YTBhZDRiYzQ5NTI1N2E4Njg1NTEzZmY1Y2FmYzdmOTM1YTcwYV98X2QwOWIyZmZhLTQyZmUtNDBhYi1hY2MwLWRkMGQyMTkzODk2OA==","authorizationHeader":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJuYW1laWQiOiI4ODBhZWFiYjRjYTdkZGRhYWJkMzYzYzBhODhhMGFkNGJjNDk1MjU3YTg2ODU1MTNmZjVjYWZjN2Y5MzVhNzBhIiwiZW1haWwiOiJpbnRlcnZpZXctdGVzdEBkcmF3Ym9hcmQuY29tIiwiaXNzIjoiYXV0aC5kcmF3Ym9hcmQuY29tIiwiYXVkIjoiaHR0cHM6Ly9wcmVwcm9kLWFwaS5idWxsY2xpcC5jb20iLCJleHAiOjE1MjA4NzA4MTgsIm5iZiI6MTUyMDg2NzIxOH0.jrjsW4ziZ-OxH2gRr3scQrURHF4jwGevIX17UWTQAAwqSv7UvLGVbzZFQTuVmdLh3rCr_aeZElNhaokOLoIDQatC0_lvgVk-1lJtqcHZucNOu_KZ9WPhTq-YlV_Xts6brE9Lac5mwMLMFEA21X-zli9bJZotECtQOafdBN8JNyZVhUVF3dx0kPU4hKBMAkKwaZMPz5fWuxb7gPtWy0J0ObFS69w6rjPvLTu5kMSd93AmFB013TGtu-VyAg9b8xPMoSBs1A8ea4pqSNkJSwLcEUWFcKOVsiWIhNyN-XV2li0flxoALogDNEPk5pSNfAIh599DqqfG4h6zr_wHPW1_Dg","expiresOnUtc":"2018-03-12T16:06:58.8639568Z"}</con:responseContent><con:header><con:name>Server</con:name><con:value>Microsoft-HTTPAPI/2.0</con:value></con:header><con:header><con:name>Content-Encoding</con:name><con:value>gzip</con:value></con:header><con:header><con:name>X-RequestTime</con:name><con:value>0:00:01.2301286</con:value></con:header><con:header><con:name>Date</con:name><con:value>Mon, 12 Mar 2018 15:06:59 GMT</con:value></con:header><con:header><con:name>X-TraceId</con:name><con:value>04f2bf92-b251-475b-8b04-2ef6e5c144b3</con:value></con:header></con:response></con:restMockAction><con:restMockAction name="/api/v1/user/profile" method="POST" resourcePath="/api/v1/user/profile" id="b39b9011-5776-4df7-9a06-09c3dabaa4e2"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Response 1" id="aad37e11-7588-4820-91fb-6065727289e1" httpResponseStatus="200" mediaType="application/json" encoding="utf-8"><con:settings/><con:responseContent>{"message":"Authorization has been denied for this request."}</con:responseContent><con:header><con:name>WWW-Authenticate</con:name><con:value>Bearer</con:value></con:header><con:header><con:name>Content-Encoding</con:name><con:value>gzip</con:value></con:header><con:header><con:name>X-RequestTime</con:name><con:value>0:00:00.0008215</con:value></con:header><con:header><con:name>Date</con:name><con:value>Mon, 12 Mar 2018 14:44:10 GMT</con:value></con:header><con:header><con:name>X-TraceId</con:name><con:value>5b1be045-9dc1-40a5-8f1d-f2780eb5e45e</con:value></con:header></con:response></con:restMockAction><con:restMockAction name="/api/v1/user/create" method="POST" resourcePath="/api/v1/user/create" id="c9b4cc18-3d13-412f-ab54-3152af4f8648"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="Response 1" id="2cd0cd5f-5b62-4809-8a11-04c6d83d4390" httpResponseStatus="200" mediaType="application/xml" encoding="iso-8859-1"><con:settings/><con:responseContent><![CDATA[<html><body><p>There are currently 0 running SoapUI MockServices</p><ul></ul></p></body></html>]]></con:responseContent><con:header><con:name>Transfer-Encoding</con:name><con:value>chunked</con:value></con:header><con:header><con:name>Server</con:name><con:value>Jetty(6.1.26)</con:value></con:header></con:response></con:restMockAction></con:restMockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer><con:oAuth2Profile><con:name>Profile 1</con:name><con:accessToken>${#Login 1 - Request 1#access_token}</con:accessToken><con:accessTokenPosition>HEADER</con:accessTokenPosition><con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow><con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod><con:accessTokenStatus>ENTERED_MANUALLY</con:accessTokenStatus><con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus></con:oAuth2Profile></con:oAuth2ProfileContainer><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
